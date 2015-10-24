@@ -44,38 +44,6 @@ inline  void  EnableMemLeakCheck(int Breakpoint = 0){
 #define _CRT_SECURE_NO_DEPRECATE
 
 
-#if _MSC_VER == 1500
-#ifdef _DEBUG
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Debug_2008/UiLib_d.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Debug_2008/UiLib_d.lib")
-#endif
-#else
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Release_2008/UiLib.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Release_2008/UiLib.lib")
-#endif
-#endif
-#endif
-
-#if _MSC_VER == 1600
-#ifdef _DEBUG
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Debug_2010/UiLib_d.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Debug_2010/UiLib_d.lib")
-#endif
-#else
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Release_2010/UiLib.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Release_2010/UiLib.lib")
-#endif
-#endif
-#endif
-
 #if _MSC_VER == 1700
 #ifdef _DEBUG
 #ifndef UILIB_EXPORTS
