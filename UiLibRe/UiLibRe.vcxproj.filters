@@ -21,10 +21,10 @@
     <ClInclude Include="..\UiLib_Demos\UiLib_Demos\targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\UiLib_Demos\UiLib_Demos\stdafx.h">
+    <ClInclude Include="MainWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\UiLib_Demos\UiLib_Demos\MainWnd.h">
+    <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -34,13 +34,13 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\UiLib_Demos\UiLib_Demos\MainWnd.cpp">
+    <ClCompile Include="MainWnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\UiLib_Demos\UiLib_Demos\stdafx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\UiLib_Demos\UiLib_Demos\UiLibRe.cpp">
+    <ClCompile Include="UiLibRe.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -28,7 +28,7 @@
 // TODO: 在此处引用程序需要的其他头文件
 
 
-#include "../../Common/Include/UiLib/UIlib.h"
+#include "../Common/Include/UiLib/UIlib.h"
 
 //程序入口处调用该函数进行内存泄露检测
 //程序退出前调用_CrtDumpMemoryLeaks();函数可查看内存泄露的ID号，该ID号可作为Breakpoint的参数，运行时将会在相应位置自动断点
@@ -44,44 +44,12 @@ inline  void  EnableMemLeakCheck(int Breakpoint = 0){
 #define _CRT_SECURE_NO_DEPRECATE
 
 
-#if _MSC_VER == 1500
-#ifdef _DEBUG
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Debug_2008/UiLib_d.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Debug_2008/UiLib_d.lib")
-#endif
-#else
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Release_2008/UiLib.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Release_2008/UiLib.lib")
-#endif
-#endif
-#endif
-
-#if _MSC_VER == 1600
-#ifdef _DEBUG
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Debug_2010/UiLib_d.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Debug_2010/UiLib_d.lib")
-#endif
-#else
-#ifndef UILIB_EXPORTS
-#pragma comment(lib, "../../Common/Static_Release_2010/UiLib.lib")
-#else
-#pragma comment(lib, "../../Common/DLL_Release_2010/UiLib.lib")
-#endif
-#endif
-#endif
-
 #if _MSC_VER == 1700
 #ifdef _DEBUG
 #ifndef UILIB_EXPORTS
 #pragma comment(lib, "../../Common/Static_Debug_2012/UiLib_d.lib")
 #else
-#pragma comment(lib, "../../Common/DLL_Debug_2012/UiLib_d.lib")
+#pragma comment(lib, "../Common/DLL_Debug_2012/UiLib_d.lib")
 #endif
 #else
 #ifndef UILIB_EXPORTS
